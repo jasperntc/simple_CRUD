@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Account_infoController;
+use App\Models\Account_info;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('account_info', Account_infoController::class);
