@@ -20,3 +20,4 @@ Route::get('/', function () {
 });
 
 Route::resource('account_info', Account_infoController::class);
+Route::get('account_info/getAccountInfos', [Account_infoController::class, "getAccountInfos"])->name('account_info.getAccountInfos');

@@ -37,15 +37,15 @@
               <input type="text" class="form-control" name="name"/>
           </div>
           <div class="form-group">
-              <label for="gender">性別</label>
-              <select class="form-control" name="gender" id="gender">
-                <option value="1">男</option>
-                <option value="0">女</option>
-              </select>
+              <label>性別</label><br>
+              <input type="radio" name="gender" id="male" value="1"/>
+              <label for="male">男</label>
+              <input type="radio" name="gender" id="female" value="0"/>
+              <label for="female">女</label>
           </div>
           <div class="form-group">
               <label for="birthdate">生日</label>
-              <input type="date" class="form-control" name="birthdate"/>
+              <input type="date" class="form-control" name="birthdate" id="birthdate"/>
           </div>
         <!-- Javascript for day selection, sets max day to today -->
           <script>

@@ -17,7 +17,7 @@ class CreateAccountInfosTable extends Migration
             $table->bigIncrements('id');
             $table->string('username');
             $table->string('name');
-            $table->boolean('gender (isMale)');
+            $table->boolean('gender');
             $table->date('birthdate');
             $table->string('email');
             $table->text('notes');
